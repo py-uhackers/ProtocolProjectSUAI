@@ -80,7 +80,7 @@ void handleTCPClient() {
   if (client)
   {
     Serial.println("New client");
-    /* check client is connected */
+    
     while (client.connected())
     {
       if (client.available())
