@@ -98,8 +98,8 @@ void handleTCPClient() {
         Serial.print("client sent: ");
         Serial.println((char *)data);
         for (int i = 0; i < 4196; ++i) {
-          if (data[i] != "a") 
-            erroe_count++;
+          if (data[i] != 'a') 
+            error_count++;
         }
       }
     }
